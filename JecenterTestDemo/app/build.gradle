@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.novoda.bintray-release'//添加
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
@@ -29,4 +30,19 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 }
-apply from: "bintrayUpload.gradle"
+publish { // 新增`
+
+    userOrg = 'jzmgaga'// 注册bintray时的username`
+
+    groupId = 'com.jzm.jecentertestdemo'// 项目包名`
+
+    artifactId = 'JecenterTestDemo'// 项目名`
+
+    publishVersion = '1.0.0'// 发布版本号`
+
+    desc = 'Summarize the tools or methods commonly used in routine development'// 项目描述，可选项`
+
+    website = 'https://github.com/jzm369/jecentertestdemo'
+
+}
+//apply from: "bintrayUpload.gradle"
