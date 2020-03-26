@@ -1,7 +1,7 @@
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
-version = "1.0.3" //library 版本，以后更新只需要更改版本号就行
+version = "1.0.0" //library 版本，以后更新只需要更改版本号就行
 
 def siteUrl = 'https://github.com/jzm369/jecentertestdemo' //项目官网，没有就填github上地址
 
@@ -31,8 +31,8 @@ install {
                 }
                 developers {
                     developer {
-                        id 'jzmgaga'        //填写的一些基本信息
-                        name 'jzmgaga'
+                        id 'jzm'        //填写的一些基本信息
+                        name 'jzm'
                         email 'jzmgaga@gmail.com'
                     }
                 }
@@ -69,8 +69,8 @@ bintray {
     key = properties.getProperty("bintray.apikey")
     configurations = ['archives']
     pkg {
-        repo = "jecnterTest"  //此处填写 你新建仓库名
-        name = "jecnterTest"    //发布到JCenter上的项目名字
+        repo = "Android-lib"  //此处填写 你新建仓库名
+        name = "JecenterTestDemo"    //发布到JCenter上的项目名字
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
