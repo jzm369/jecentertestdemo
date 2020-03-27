@@ -33,9 +33,9 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
 publish {
-    userOrg = 'jzm'   //bintray注册的用户名
+    userOrg = 'jzmyph'   //bintray注册的用户名
     groupId = 'com.jzm.testlibrary'         //compile引用时的第1部分groupId
-    artifactId = 'jecnterTest'     //compile引用时的第2部分项目名
+    artifactId = 'MyBaseLibrary'     //compile引用时的第2部分项目名
     publishVersion = '1.0.1'    //compile引用时的第3部分版本号
     desc = 'for android dynamic request permission'            //描述
     website = 'https://github.com/jzm369/jecentertestdemo'   //开源项目网址
